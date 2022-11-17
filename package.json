@@ -1,0 +1,37 @@
+{
+    "name": "socialmediaapp",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon server.js",
+        "dev": "concurrently --kill-others \"nodemon server.js\" \"cd client && npm start\"",
+        "deploy": "pm2 start server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/u2015s/socialMediaApp.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/u2015s/socialMediaApp/issues"
+    },
+    "homepage": "https://github.com/u2015s/socialMediaApp#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "concurrently": "^7.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^14.3.2",
+        "express": "^4.17.2",
+        "jsonwebtoken": "^8.5.1",
+        "lodash": "^4.17.21",
+        "mongodb": "^4.3.1",
+        "mongoose": "^6.1.8",
+        "nodemon": "^2.0.15",
+        "pm2": "^5.1.2",
+        "socket.io": "^4.4.1"
+    }
+}
